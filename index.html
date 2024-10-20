@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="w1"></h1>
+    <h1 id="w2"></h1>
+    <h1 id="w3"></h1>
+    <script>
+        class worker
+        {
+          constructor(name,age){
+            this.name=name
+            this.age=age
+          }
+          intro(){
+          return "work name is "+this.name+" worker age ="+this.age  
+          }
+        }
+        var worker1=new worker("khurram",18)
+        var worker2=new worker("ali",15)
+        var worker3=new worker("fahad",21)
+        document.getElementById("w1").innerHTML=worker1.intro()
+        document.getElementById("w2").innerHTML=worker2.intro()
+        document.getElementById("w3").innerHTML=worker3.intro()
+    </script>
+</body>
+</html>
